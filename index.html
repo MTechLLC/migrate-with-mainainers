@@ -2,15 +2,15 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<title>Migrate with the Maintainers - lab</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Migrate with the Maintainers - lab</title>
-
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
-
+		<link rel="stylesheet" href="css/theme/drupalcon2017_baltimore.css">
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -30,6 +30,39 @@
 								 data-separator-notes="^Note:"
 								 data-charset="utf8">
 				</section>
+				<section class="align-left heading-space" data-state="baltimore-person">
+					<h1>Join Us for Contribution Sprints</h1>
+					<h2>Friday, April 28, 2017</h2>
+					<p>
+						First-time Sprinter Workshop<br />
+						9:00am - 12:00pm<br />
+						Room: 307-308
+					</p>
+					<p>
+						Mentored Core Sprint<br />
+						9:00am - 12:00pm<br />
+						Room: 301-303
+					</p>
+					<p>
+						General Sprints<br />
+						9:00am - 6:00pm<br />
+						Room: 309-310
+					</p>
+
+					<p class="hashtag bottom-right">
+						#drupalsprints
+					</p>
+				</section>
+
+				<section class="center" data-state="baltimore-promenade">
+					<img src="images/baltimore-logo.svg" class="logo-small" alt="DrupalCon Baltimore 2017" />
+					<h1>WHAT DID YOU THINK?</h1>
+					<p>
+						Locate this session at the<br />DrupalCon Baltimore website:</br><a href="https://baltimore2017.drupal.org/schedule" title="Baltimore Schedule">http://baltimore2017.drupal.org/schedule</a>
+					</p>
+					<p><a href="https://www.surveymonkey.com/r/drupalconbaltimore" title="Survey">Take the survey!</a></p>
+					<h1>THANK YOU!</h1>
+				</section>
 			</div>
 		</div>
 
@@ -40,12 +73,17 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+        slideNumber: true,
+        center: false,
+        transition: 'convex',
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
 				]
 			});
 		</script>

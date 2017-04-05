@@ -1,0 +1,212 @@
+/**
+ * DrupalaCon 2017 - Baltimore Core CSS
+ */
+/**
+ * variables
+ */
+/**
+ * base styles
+ */
+::selection {
+  color: #fff;
+  background: #172a3c;
+  text-shadow: none; }
+
+.reveal {
+  font-family: "Lato", Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: #fff;
+  line-height: 1.45; }
+  .reveal a {
+    color: #e0ca7d; }
+    .reveal a:hover, .reveal a:focus {
+      color: #b7a565; }
+  .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    font-weight: normal;
+    font-family: "Merriweather", Georgia, Times, Times New Roman, serif;
+    color: #fff;
+    word-wrap: break-word; }
+  .reveal img {
+    display: inline-block;
+    margin: 0 0 20px 0; }
+  .reveal h1 {
+    font-size: 55px;
+    margin: 0 0 48px 0;
+    color: #e0ca7d; }
+  .reveal h2 {
+    font-size: 35px;
+    margin: 0 0 38px 0; }
+  .reveal h3 {
+    font-size: 25px;
+    margin: 0 0 28px 0; }
+  .reveal h3 {
+    font-size: 20px;
+    margin: 0 0 28px 0; }
+  .reveal h4 {
+    font-size: 18px;
+    margin: 0 0 28px 0; }
+  .reveal h5 {
+    font-size: 17px;
+    margin: 0 0 20px 0; }
+  .reveal h6 {
+    font-size: 16px;
+    margin: 0 0 20px 0; }
+  .reveal p {
+    margin: 0 0 20px 0; }
+  .reveal ul, .reveal ol {
+    margin: 0 0 20px 20px;
+    list-style-position: inside; }
+    .reveal ul li, .reveal ol li {
+      margin: 0 0 20px 0; }
+      .reveal ul li ul, .reveal ul li ol, .reveal ol li ul, .reveal ol li ol {
+        margin: 20px 0 0 20px; }
+  .reveal strong, .reveal b {
+    font-weight: bold; }
+  .reveal em {
+    font-style: italic; }
+  .reveal dt {
+    font-weight: bold; }
+  .reveal dd {
+    margin-left: 40px; }
+  .reveal q {
+    font-style: italic; }
+  .reveal pre {
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    text-align: left;
+    font-size: 1em;
+    font-family: monospace;
+    line-height: 1.2em;
+    word-wrap: break-word; }
+  .reveal code {
+    font-family: monospace; }
+  .reveal pre code {
+    display: block;
+    padding: 5px;
+    overflow: auto;
+    max-height: 400px;
+    word-wrap: normal; }
+  .reveal table {
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0; }
+    .reveal table th {
+      font-weight: bold; }
+    .reveal table th, .reveal table td {
+      text-align: left;
+      padding: 0.2em 0.5em 0.2em 0.5em;
+      border-bottom: 1px solid; }
+    .reveal table tr:last-child td {
+      border-bottom: none; }
+  .reveal sup {
+    vertical-align: super; }
+  .reveal sub {
+    vertical-align: sub; }
+  .reveal small {
+    display: inline-block;
+    font-size: 0.6em;
+    line-height: 1.2em;
+    vertical-align: top; }
+    .reveal small * {
+      vertical-align: top; }
+  .reveal .logo {
+    max-width: 314px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 0 0 72px 0; }
+  .reveal .logo-small {
+    max-width: 218px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 0 0 72px 0; }
+  .reveal .align-left {
+    text-align: left; }
+  .reveal .heading-space {
+    margin-top: 100px; }
+  .reveal .hashtag {
+    font-size: 35px;
+    color: #e0ca7d;
+    font-family: "Merriweather", Georgia, Times, Times New Roman, serif; }
+  .reveal .bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .reveal .body-color-dark {
+    color: #172a3c; }
+    .reveal .body-color-dark h1 {
+      color: #172a3c; }
+  .reveal .columns {
+    font-size: 0; }
+    .reveal .columns.columns-2 .column {
+      font-size: 16px;
+      width: 46%;
+      padding-left: 2%;
+      padding-right: 2%;
+      display: inline-block;
+      text-align: left;
+      vertical-align: top; }
+.reveal q,
+.reveal blockquote {
+  quotes: none; }
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block; }
+
+.reveal q {
+  font-style: italic; }
+
+/**
+ * backgrounds
+ */
+html.baltimore-city body {
+  background: url("../../images/bg-baltimore-city.jpg") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+html.baltimore-bird body {
+  background: url("../../images/bg-baltimore-bird.jpg") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  html.baltimore-bird body a {
+    color: #009999; }
+    html.baltimore-bird body a:hover, html.baltimore-bird body a:focus {
+      color: #172a3c; }
+
+html.baltimore-docks body {
+  background: url("../../images/bg-baltimore-docks.jpg") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+html.baltimore-person body {
+  background: url("../../images/bg-baltimore-person.jpg") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+html.baltimore-promenade body {
+  background: url("../../images/bg-baltimore-promenade.jpg") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }

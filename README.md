@@ -1,4 +1,4 @@
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="center" data-state="baltimore-city"-->
 # Migrate with the Maintainers
 ## Lab
 
@@ -7,14 +7,12 @@
  - Mike Ryan (mikeryan)
  - Ryan Weal (Ryan Weal)
 
-
-
 Formatted as slides here:
 https://mtechllc.github.io/migrate-with-mainainers/#/
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
 ## What is migrate?
 
  - A method to import content and configuration
@@ -25,7 +23,7 @@ https://mtechllc.github.io/migrate-with-mainainers/#/
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
 ## Historical Note
 
  - Forget what you know about migrate for Drupal 7
@@ -33,7 +31,7 @@ https://mtechllc.github.io/migrate-with-mainainers/#/
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
 ## What is migrate?
 
  - A method to extract content and configuration, transform it and load into Drupal 8
@@ -43,7 +41,7 @@ https://mtechllc.github.io/migrate-with-mainainers/#/
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
 ## What is migrate?
 ### Source Plugin
  - Extract data from somewhere
@@ -59,10 +57,11 @@ SQL is in core, the rest are in contrib.
 
 
 
-<!-- .slide: data-background-color="#262361" -->
-## Source process plugin - Core examples
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
+## Source process plugin
+### Core examples
  - block
- - d7_field_instance (extends SQL)
+ - d7_field_instance
  - d6_node_settings
  - d7_url_alias
  - +140  more for all your Drupal to Drupal needs
@@ -72,7 +71,7 @@ Almost all of core's source plugins extend from SQL.
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
 ## What is migrate?
 ### Process Plugin
  - Transform data
@@ -90,7 +89,7 @@ Note:
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
 ## What is migrate?
 ### Destination Plugin
  - Load data into the destination
@@ -108,7 +107,7 @@ Note:
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
 ## Modules
 ### Core
   - migrate
@@ -121,13 +120,14 @@ Note:
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
 ## Modules
 ### Contrib
   - migrate_plus
-    - Store migration as config entities, Import from JSON / XML
+    - Store migration as config entities
+    - Import from JSON / XML
   - migrate_tools
-    - Run migrations from command line
+    - Run migrations from command line (drush)
   - migrate_source_csv
     - Import CSV data
   - wordpress_migrate
@@ -138,7 +138,7 @@ Note:
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
 ## Migration approaches
 
 <table border="1" cellpadding="1" cellspacing="1" style="width: 100%;">
@@ -160,6 +160,7 @@ Note:
       <ul>
         <li>migrate</li>
         <li>migrate_drupal</li>
+        <li>migrate_upgrade</li>
         <li>migrate_plus (contrib)</li>
         <li>migrate_tools (contrib)</li>
       </ul>
@@ -168,6 +169,7 @@ Note:
         <ul>
           <li>migrate</li>
           <li>migrate_drupal</li>
+          <li>migrate_upgrade</li>
           <li>migrate_plus (contrib)</li>
           <li>migrate_tools (contrib)</li>
           <li>migrate_source_csv (contrib)</li>
@@ -184,7 +186,7 @@ Note:
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
 ## Automatic Method
 
 <blockquote>As a goat, I don't want to do any configuration or coding.  I just
@@ -194,7 +196,7 @@ At the end of this section you will know how to run migrations using the UI.
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
 ## Automatic Method Setup
 
  - Modules: migrate, migrate_drupal, migrate_drupal_ui
@@ -202,20 +204,21 @@ At the end of this section you will know how to run migrations using the UI.
  - Input DB and file paths
  - Run it.
 
-<img src='images/figure4.png'>
+<img class="stretch" src='images/figure4.png'>
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="heading-space body-color-dark" data-state="baltimore-bird" -->
+## Automatic Method
 Import success!
 
 Add D7 hash to settings.php!
 
-<img src='images/figure8.png'>
+<img class="stretch" src='images/figure8.png'>
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
 ## Automatic Method Extras
 
 Possible to pre-fill database values in UI using hook_form_alter:
@@ -237,18 +240,17 @@ There is also a settings.php hack but it does not work for UI.
 
 
 
-<!-- .slide: data-background-color="#262361" -->
+<!-- .slide: class="align-left heading-space body-color-dark" data-state="baltimore-bird" -->
 ## Automatic Method: Further reading
 
- - Performing Drupal Content Migrations on Pantheon
-   https://pantheon.io/blog/performing-drupal-content-migrations-pantheon
+ - [Performing Drupal Content Migrations on Pantheon](https://pantheon.io/blog/performing-drupal-content-migrations-pantheon)
 
 
 
-<!-- .slide: data-background-color="#718522" -->
+<!-- .slide: class="align-left" data-state="baltimore-docks" -->
 ## Hybrid Method
 
-<blockquote> As a goat, I know writing code from scatch can take a long time,
+<blockquote> As a goat, I know writing code from scratch can take a long time,
 but migrate can detect all of my configuration so I can skip that. I only want
 to run part of it. Or I want to change it just a bit.</blockquote>
 
@@ -257,15 +259,16 @@ for migrations.
 
 
 
-<!-- .slide: data-background-color="#718522" -->
+<!-- .slide: class="align-left" data-state="baltimore-docks" -->
 ## Hybrid Method Setup
-Migrating from Drupal 6 or 7
+### Migrating from Drupal 6 or 7
+- Enable: migrate, migrate_drupal, migrate_tools, migrate_upgrade, migrate_plus
+- Add legacy database to settings.php.
+- Install drush
 
- - Enable: migrate, migrate_drupal, migrate_tools, migrate_plus
- - Install drush
- - Add 'upgrade' database to settings.php if you don't want to put on command line each time:
+<pre><code>drush migrate-upgrade --legacy-db-key=d6 --legacy-root=/files/path</code></pre>
 
-     <pre><code>$databases['upgrade']['default'] = array (
+     $databases['d6']['default'] = [
       'database' => 'cooks_legacy',
       'username' => 'root',
       'password' => 'my-secret-pw',
@@ -274,11 +277,11 @@ Migrating from Drupal 6 or 7
       'port' => '3306',
       'namespace' => 'Drupal\Core\Database\Driver\mysql',
       'driver' => 'mysql',
-    );</code></pre>
+    ];
 
 
 
-<!-- .slide: data-background-color="#718522" -->
+<!-- .slide: class="align-left" data-state="baltimore-docks" -->
 ## Hybrid Method Discovery
 
  - Create the config, only run a few? or,
@@ -289,19 +292,16 @@ Migrating from Drupal 6 or 7
 
 
 
-<!-- .slide: data-background-color="#718522" -->
+<!-- .slide: class="align-left" data-state="baltimore-docks" -->
 ## Hybrid Workflow: Export
 
 Configure the Migrations
 
-    drush migrate-upgrade \
-    --legacy-db-url=mysql://user:password@server/db \
-    --legacy-root=http://example.com \
-    --configure-only
+    $ drush migrate-upgrade --configure-only --legacy-db-key=d6 --legacy-root=/files/path
 
-Remember if you created 'upgrade' db in settings.php you can skip the --legacy-db-url.
+Then reap profits:
 
-     # drush migrate-status                                                    
+     $ drush migrate-status                                                    
      Group: migrate_drupal_6                         Status  Total  Imported  Unprocessed  Last imported 
      upgrade_block_content_type                      Idle    1      0         1                          
      upgrade_contact_category                        Idle    0      0         0                          
@@ -392,7 +392,7 @@ Remember if you created 'upgrade' db in settings.php you can skip the --legacy-d
 
 
 
-<!-- .slide: data-background-color="#718522" -->
+<!-- .slide: class="align-left" data-state="baltimore-docks" -->
 ## Hybrid Workflow: Export
 
 Export as config
@@ -403,7 +403,7 @@ Everything should now be in your config folder.
 
 
 
-<!-- .slide: data-background-color="#718522" -->
+<!-- .slide: class="align-left" data-state="baltimore-docks" -->
 ## Hybrid Workflow: Remix
 Edit migrate_plus.migration.d6_user.yml
 
@@ -449,7 +449,7 @@ Edit migrate_plus.migration.d6_user.yml
 
 
 
-<!-- .slide: data-background-color="#718522" -->
+<!-- .slide: class="align-left" data-state="baltimore-docks" -->
 ## Hybrid Workflow: Process Chain
 
 Implicit get plugin:
@@ -465,30 +465,32 @@ Specific process plugin:
         migration: users
         source: author
 
-
-
-<!-- .slide: data-background-color="#718522" -->
-## Hybrid Workflow: Complex Process Chain
 Chained process: 
 
-    process:
-        format:
-            -
-                plugin: machine_name
-                source: name
-            -
-                plugin: dedupe_entity
-                entity_type: filter_format
-                field: format
+      id:
+        -
+          plugin: concat
+          source:
+            - theme
+            - module
+            - delta
+          delimiter: _
+        -
+          plugin: machine_name
+          field: id
 
 
 
-<!-- .slide: data-background-color="#718522" -->
+<!-- .slide: class="align-left" data-state="baltimore-docks" -->
 ## Hybrid Workflow: run the migrations
 
 Import your configuration if you made changes.
 
     drush config-import
+    
+Flush cache
+
+    drush cr
 
 Run all migrations!
 
@@ -500,32 +502,34 @@ Or run only a single migration:
 
 
 
-<!-- .slide: data-background-color="#718522" -->
+<!-- .slide: class="align-left" data-state="baltimore-docks" -->
 ## Hybrid Workflow: Further Reading
 
- - Custom Drupal-to-Drupal Migrations with Migrate Tools 
-  https://drupalize.me/blog/201605/custom-drupal-drupal-migrations-migrate-tools
+ - [Custom Drupal-to-Drupal Migrations with Migrate Tools](https://drupalize.me/blog/201605/custom-drupal-drupal-migrations-migrate-tools)
+ - [Categorizing Migrations According to Their Type](https://www.mtech-llc.com/blog/edys-meza/categorizing-migrations-according-their-type)
+ - [Config Management & Migrations](https://www.mtech-llc.com/blog/lucas-hedding/config-management-migrations)
 
 
 
-<!-- .slide: data-background-color="#8B7324" -->
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
 ## Manual Method
 
 <blockquote> As a goat, I have narrowed my use case to just what I need and I would like to be all zen and do it from scratch. If I'm doing a Drupal 2 Drupal migration, I customarily am told to "get a life".</blockquote>
 
-All the details of configuring a migration.
+### All the details of configuring a migration.
 
 
 
-<!-- .slide: data-background-color="#8B7324" -->
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
 ## Manual Method Setup
-Migrating from everything else
+### Migrating from everything else
 
  - Enable: migrate, migrate_drupal, migrate_tools, migrate_plus, migrate_source_csv
  - Install drush
- - For DB migrations, add 'migrate' database to settings.php:
+ - For DB migrations, add legacy database to settings.php:
+ 
 
-     <pre><code>$databases['migrate']['default'] = array (
+     $databases['d6']['default'] = [
       'database' => 'cooks_legacy',
       'username' => 'root',
       'password' => 'my-secret-pw',
@@ -534,20 +538,22 @@ Migrating from everything else
       'port' => '3306',
       'namespace' => 'Drupal\Core\Database\Driver\mysql',
       'driver' => 'mysql',
-    );</code></pre>
+    ];
 
-You can import from multiple DBs by using migration groups and corresponding
-key name.
+Note:
+ - You can import from multiple DBs by using migration groups and corresponding
+configuration.
 
 
 
-<!-- .slide: data-background-color="#8B7324" -->
-## Manual Method Custom Module
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
+## Manual Method Custom
+### Module
 
-We are not going to use the 'migrate' database we put into settings.php. We will
+We are not going to use the database we put into settings.php. We will
 just use a text file called animals.csv.
 
-    rcw@mojito:~/migrate_demo$ tree
+    $ tree
     .
     ├── animals.csv
     ├── config
@@ -555,9 +561,15 @@ just use a text file called animals.csv.
     │       └── migrate_plus.migration.animals.yml
     └── migrate_demo.info.yml
 
-The file only has one column.
 
-    rcw@mojito:~/migrate_demo$ cat animals.csv 
+
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
+## Manual Method Custom
+### CSV
+
+The CSV file only has one column.
+
+    $ cat animals.csv 
     lion
     tiger
     elephant
@@ -566,7 +578,7 @@ The file only has one column.
 
 
 
-<!-- .slide: data-background-color="#8B7324" -->
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
 ## Manual method, after enabling
 
     # drush ms                                             
@@ -583,11 +595,11 @@ Now import!
 
 
 
-<!-- .slide: data-background-color="#8B7324" -->
-## Migration represented as config
-using migrate_plus
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
+## Migration Represented as Config
+### Migrate Plus
 
-    rcw@mojito:~/migrate_demo/config/install$ cat migrate_plus.migration.animals.yml 
+    $ cat migrate_plus.migration.animals.yml 
     # The source data is in CSV files, so we use the 'csv' source plugin.
     id: animals
     label: CSV file migration
@@ -596,7 +608,7 @@ using migrate_plus
     source:
       plugin: csv
       # Full path to the file.
-      path: /var/www/html/modules/migration_dev/migrate_demo/animals.csv
+      path: /var/www/html/modules/migrate_demo/animals.csv
       header_row_count: 0
       keys:
         - id
@@ -608,34 +620,36 @@ using migrate_plus
     process:
       type:
         plugin: default_value
-        default_value: article
+        default_value: animal
       title: id 
 
 
 
-<!-- .slide: data-background-color="#8B7324" -->
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
 ## Manual Method: Further Reading
 
- - Drupal 6 to Drupal 8(.1.x) Custom Content Migration
-   https://www.drupaleasy.com/blogs/ultimike/2016/04/drupal-6-drupal-81x-custom-content-migration
+ - [Drupal 6 to Drupal 8(.1.x) Custom Content Migration](https://www.drupaleasy.com/blogs/ultimike/2016/04/drupal-6-drupal-81x-custom-content-migration)
+ - [Migrating Date Ranges into Date Range Module](https://www.mtech-llc.com/blog/gerardo-hernandez/migrating-date-ranges-csv-date-range-module)
+ - [Migration of Data into Paragraphs](https://www.mtech-llc.com/blog/charlotte-leon/migration-csv-data-paragraphs)
+ - [How to Migrate Images](https://www.mtech-llc.com/blog/ada-hernandez/how-migrate-images-drupal-8-using-csv-source)
 
 
 
-<!-- .slide: data-background-color="#8B4524" -->
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
 ## Migrations are Plugins
 
 <blockquote> As a goat, I want to know every detail of what I am working with, extend it in new ways, and contribute back to the community.</blockquote>
 
-A brief introduction to plugins.
+### A brief introduction to plugins.
 
 
 
-<!-- .slide: data-background-color="#8B4524" -->
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
 ## This whole talk was about Plugins
 
-Who knew?
+### Who knew?
 
-    rcw@mojito:~/katli/repos/drupal/core/modules/migrate_drupal$ tree
+    $ tree
     .
     ├── migrate_drupal.info.yml
     ├── migrate_drupal.module
@@ -657,23 +671,68 @@ Who knew?
     │   │   │       │   └── i18nVariable.php
     │   │   │       ├── d7
     │   │   │       │   └── FieldableEntity.php
+    │   │   │       ├── d8
+    │   │   │       │   └── Config.php
     │   │   │       ├── DrupalSqlBase.php
     │   │   │       ├── EmptySource.php
     │   │   │       ├── VariableMultiRow.php
     │   │   │       └── Variable.php
-    │   │   └── MigrateCckFieldInterface.php
+    │   │   ├── MigrateCckFieldInterface.php
+    │   │   ├── MigrateCckFieldPluginManagerInterface.php
+    │   │   └── MigrateCckFieldPluginManager.php
     │   └── Tests
     │       └── StubTestTrait.php
-    ...
+    └── tests
+        ├── fixtures
+        │   ├── drupal6.php
+        │   └── drupal7.php
+        ├── modules
+        │   ├── migrate_cckfield_plugin_manager_test
+        │   │   ├── migrate_cckfield_plugin_manager_test.info.yml
+        │   │   └── src
+        │   │       └── Plugin
+        │   │           └── migrate
+        │   │               └── cckfield
+        │   │                   ├── D6FileField.php
+        │   │                   └── D6NoCoreVersionSpecified.php
+        │   └── migrate_overwrite_test
+        │       ├── migrate_overwrite_test.info.yml
+        │       └── migration_templates
+        │           └── users.yml
+        └── src
+            ├── Kernel
+            │   ├── d6
+            │   │   ├── EntityContentBaseTest.php
+            │   │   └── MigrateDrupal6TestBase.php
+            │   ├── d7
+            │   │   └── MigrateDrupal7TestBase.php
+            │   ├── dependencies
+            │   │   └── MigrateDependenciesTest.php
+            │   ├── MigrateCckFieldPluginManagerTest.php
+            │   ├── MigrateDrupalTestBase.php
+            │   └── Plugin
+            │       └── migrate
+            │           └── source
+            │               └── d8
+            │                   └── ConfigTest.php
+            └── Unit
+                └── source
+                    ├── d6
+                    │   ├── Drupal6SqlBaseTest.php
+                    │   └── i18nVariableTest.php
+                    ├── DrupalSqlBaseTest.php
+                    ├── VariableMultiRowSourceWithHighwaterTest.php
+                    ├── VariableMultiRowTestBase.php
+                    ├── VariableMultiRowTest.php
+                    └── VariableTest.php
 
 
 
-<!-- .slide: data-background-color="#8B4524" -->
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
 ## Plugin Structure
+### Single file, no registration, just rebuild cache.
 
-Single file, no registration, just rebuild cache.
-
-    rcw@mojito:~/katli/repos/drupal/core/modules/migrate/src/Plugin/migrate/process$ cat Concat.php 
+    $ cat Concat.php 
     <?php
     
     namespace Drupal\migrate\Plugin\migrate\process;
@@ -684,7 +743,7 @@ Single file, no registration, just rebuild cache.
     use Drupal\migrate\Row;
     
     /**
-     * Concatenates the strings in the current value.
+     * Concatenates a set of strings.
      *
      * @MigrateProcessPlugin(
      *   id = "concat",
@@ -695,8 +754,6 @@ Single file, no registration, just rebuild cache.
     
       /**
        * {@inheritdoc}
-       *
-       * Concatenates the strings in the current value.
        */
       public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
         if (is_array($value)) {
@@ -710,26 +767,27 @@ Single file, no registration, just rebuild cache.
     
     }
 
-Remember to update the annotation (comment) as it is processed.
+Note:
+ Key is to update the annotation (comment) as it is processed.
 
 
 
-<!-- .slide: data-background-color="#8B4524" -->
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
 ## Plugins: Further Reading
 
- - Migrate API in Drupal 8
-   https://www.drupal.org/node/2127611
+ - [Migrate process overview](https://www.drupal.org/docs/8/api/migrate-api/migrate-process/migrate-process-overview)
 
 
 
 
-<!-- .slide: data-background-color="#EBEBEB" -->
-## Questions?
+<!-- .slide: class="heading-space body-color-dark" data-state="baltimore-bird" -->
+- Adam Hoenich (phenaproxima) [@djphenaproxima](https://twitter.com/djphenaproxima)
+ <a href="https://acquia.com"><img style="vertical-align: middle;" height=80px src=images/acquia.svg></a>
+- Lucas Hedding (heddn) [@lucashedding](https://twitter.com/lucashedding)
+ <a href="https://www.mtech-llc.com"><img style="vertical-align: middle;" height=80px src=images/mtech.svg></a>
+- Mike Ryan (mikeryan) [@VirtPerformance](https://twitter.com/VirtPerformance)
+ <a href="http://virtuoso-performance.com"><img style="vertical-align: middle;" height=80px src=images/virtuoso.svg></a>
+- Ryan Weal (Ryan Weal)
+ <a href="https://kafei.ca"><img style="vertical-align: middle;" height=80px src=images/kafei.png></a>
 
-https://twitter.com/ryan_weal
-
-https://twitter.com/italiatina
-
-<img src=images/kafei.png>
-
-The Kafei Interactive logo and wordmark is a trademark of Kafei Interactive Inc. (Canada).
+Slidedeck liberaly inspired by [@ryan_weal](https://twitter.com/ryan_weal)'s [Migrate Shotgun Tour](https://github.com/kafeiinteractif/shotgun-migrate-tour) presentation.
