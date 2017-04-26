@@ -786,7 +786,7 @@ Note:
 - Lucas Hedding (heddn) [@lucashedding](https://twitter.com/lucashedding)
  <a href="https://www.mtech-llc.com"><img style="vertical-align: middle;" height=80px src=images/mtech.svg></a>
 - Mike Ryan (mikeryan) [@VirtPerformance](https://twitter.com/VirtPerformance)
- <a href="http://virtuoso-performance.com"><img style="vertical-align: middle;" height=80px src=images/virtuoso.svg></a>
+ <a href="http://virtuoso-performance.com">Virtuoso Performance</a>
 - Ryan Weal (Ryan Weal)
  <a href="https://kafei.ca"><img style="vertical-align: middle;" height=80px src=images/kafei.png></a>
 
