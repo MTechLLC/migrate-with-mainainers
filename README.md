@@ -780,6 +780,29 @@ Note:
 
 
 
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
+## Hands-on lab
+
+- Text
+- Email
+- Image
+- Term
+- Date
+- Link (together)
+
+
+
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
+## Hands-on lab
+### Link migration
+
+Let's do this together!!!
+Copy contents of web/modules/custom/custom_migrate/artifacts/people_link.csv over
+web/modules/custom/custom_migrate/artifacts/people.csv
+
+
+
+
 <!-- .slide: class="heading-space body-color-dark" data-state="baltimore-bird" -->
 - Adam Hoenich (phenaproxima) [@djphenaproxima](https://twitter.com/djphenaproxima)
  <a href="https://acquia.com"><img style="vertical-align: middle;" height=80px src=images/acquia.svg></a>
