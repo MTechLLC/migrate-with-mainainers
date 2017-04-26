@@ -803,6 +803,14 @@ web/modules/custom/custom_migrate/artifacts/people.csv
 
 
 
+<!-- .slide: class="align-left" data-state="baltimore-promenade" -->
+## Hands-on lab
+### Field (CCK) plugins DEMO!!!
+<img width=100% src=images/field_table.png>
+
+
+
+
 <!-- .slide: class="heading-space body-color-dark" data-state="baltimore-bird" -->
 - Adam Hoenich (phenaproxima) [@djphenaproxima](https://twitter.com/djphenaproxima)
  <a href="https://acquia.com"><img style="vertical-align: middle;" height=80px src=images/acquia.svg></a>
