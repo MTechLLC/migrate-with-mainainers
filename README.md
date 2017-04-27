@@ -36,7 +36,7 @@ https://mtechllc.github.io/migrate-with-mainainers/#/
 
  - A method to extract content and configuration, transform it and load into Drupal 8
      - Soure plugin (extract)
-     - Process pluggin (transform)
+     - Process plugin (transform)
      - Destination plugin (load)
 
 
